@@ -8,6 +8,12 @@
 " Usage:
 " https://github.com/kshvmdn/vim-searchfox/blob/master/README.md
 
+if exists("g:loaded_searchfox")
+  finish
+endif
+
+let g:loaded_searchfox = 1
+
 if !exists("g:searchfox_url")
   let g:searchfox_url = "https://searchfox.org/mozilla-central/"
 endif
